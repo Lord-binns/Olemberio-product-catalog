@@ -2,15 +2,17 @@
     "products": [
       {
         "id": 1,
-        "name": "Product 1",
+        "name": " Daedalus",
         "price": 20.99,
-        "description": "Description of Product 1"
+        "description": "Description of Product 1",
+        "date added": "December 02 , 2024"
       },
       {
         "id": 2,
-        "name": "Product 2",
+        "name": " Black king bar",
         "price": 15.49,
-        "description": "Description of Product 2"
+        "description": "Description of Product 2",
+        "date added": "December 03 , 2024"
       }
     
     ]
