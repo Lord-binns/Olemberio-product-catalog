@@ -1,8 +1,8 @@
-const apiUrl = 'js/data.json'; // URL of the JSON data file
+const apiUrl = 'js/data.json';  
 
 async function DisplayProducts() {
     try {
-        // Fetch data from the API
+     
         const response = await fetch(apiUrl);
 
         // Check if the response is successful
@@ -13,10 +13,10 @@ async function DisplayProducts() {
         // Parse the JSON data from the response
         const data = await response.json();
 
-        // Get the product list container element from the HTML
+       
         const productList = document.getElementById('product-list');
 
-        // Clear any existing content in the product list container
+         
         productList.innerHTML = '';
 
         // Create a heading for the product list
@@ -24,27 +24,27 @@ async function DisplayProducts() {
         productListHeading.textContent = 'SHOP ITEMS LIST';
         productList.appendChild(productListHeading);
 
-        // Create a container for the product cards
+        //  the container for the product cards
         const productContainer = document.createElement('div');
-        // Apply flex display to the product container
+        // Apply flex display  for the container
         productContainer.style.display = 'flex';
-        // Allow wrapping of items inside the product container
+        
         productContainer.style.flexWrap = 'wrap';
 
         // Loop through each product in the data array
         data.forEach(product => {
-            // Create a product card element
+           // this is the loop
             const productCard = document.createElement('div');
-            // Add a CSS class to the product card for styling
+         
             productCard.classList.add('product-card');
-            // Apply inline CSS for styling the product card
+            //  this is the inline css to have better design
             productCard.style.border = '2px solid #ccc';
             productCard.style.borderRadius = '8px';
             productCard.style.padding = '10px';
             productCard.style.width = 'calc(33.33% - 20px)';
             productCard.style.boxSizing = 'border-box';
-            productCard.style.marginRight = '20px'; // Add some right margin between cards
-            productCard.style.marginBottom = '20px'; // Add some bottom margin between cards
+            productCard.style.marginRight = '20px';  
+            productCard.style.marginBottom = '20px';  
 
             // Create elements for displaying product information
             const productName = document.createElement('h3');
@@ -59,7 +59,7 @@ async function DisplayProducts() {
             const productDate = document.createElement('p');
             productDate.textContent = `Date Added: ${product['date added']}`;
 
-            // Append product information elements to the product card
+           
             productCard.appendChild(productName);
             productCard.appendChild(productDescription);
             productCard.appendChild(productPrice);
@@ -83,17 +83,17 @@ async function DisplayProducts() {
                 console.log(`Product "${product.name}" added to cart. Click count: ${clickCount}`);
             });
 
-            // Append the add to cart button and click count indicator to the product card
+     
             productCard.appendChild(addButton);
             productCard.appendChild(clickCountIndicator);
 
-            // Append the product card to the product container
+         
             productContainer.appendChild(productCard);
         });
 
-        // Append the product container to the product list
+     
         productList.appendChild(productContainer);
-
+ 
     } catch (error) {
         console.error('Error fetching data:', error);
     }
