@@ -1,21 +1,31 @@
 [
   {
-    "name": " Daedalus",
-    "description": " A weapon of incredible power that is difficult for even the strongest of warriors to control.", 
-    "price": 5100 ,
-    "date added":  " Feb 05, 2024"
+    "name": "Daedalus",
+    "description": "A weapon of incredible power that is difficult for even the strongest of warriors to control.",
+    "price": 5100,
+    "date added": "Feb 05, 2024",
+    "imageUrl": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fexternal-preview.redd.it%2FLdnswl9CQQGy9KZFOxhEJv6fp1Twi9WxmMLs2lbSpQI.jpg%3Fauto%3Dwebp%26s%3Dddb8c3cad52047021b8d7e9f2b59adcc416958a1&tbnid=gysUPjPVr_YKNM&vet=12ahUKEwjesrnM-KWEAxUqka8BHR07DfQQMygCegQIARBT..i&imgrefurl=https%3A%2F%2Fwww.reddit.com%2Fr%2FDotA2%2Fcomments%2F1lv6zi%2Fsteam_workshop_daedalus_for_drow_ranger%2F&docid=TPNct6EF1UFlAM&w=512&h=512&q=daedalus%20image%20dota%202&hl=en&ved=2ahUKEwjesrnM-KWEAxUqka8BHR07DfQQMygCegQIARBT"
   },
   {
     "name": "Black king bar",
-    "description": " Applies a Basic Dispel. Grants 50% Magic resistance and immunity to pure and reflected damage.", 
-    "price": 4050 ,
-    "date added":  " Feb 05, 2024"
+    "description": "Applies a Basic Dispel. Grants 50% Magic resistance and immunity to pure and reflected damage.",
+    "price": 4050,
+    "date added": "Feb 05, 2024",
+    "imageUrl": "path/to/black_king_bar_image.jpg"
   },
   {
-    "name": " Echo saber",
-    "description": "A deceptively swift blade imbued with resonant magic.", 
-    "price": 2700 ,
-    "date added":  " Feb 05, 2024"
+    "name": "Echo saber",
+    "description": "A deceptively swift blade imbued with resonant magic.",
+    "price": 2700,
+    "date added": "Feb 05, 2024",
+    "imageUrl": "path/to/echo_saber_image.jpg"
+  },
+
+  {
+    "name": "Divine Rapier",
+    "description": "So powerful, it cannot have a single owner. Divine Rapier drops when its wielder dies, unless they have available Reincarnation sources.",
+    "price": 5600,
+    "date added": "Feb 12, 2024",
+    "imageUrl": "path/to/echo_saber_image.jpg"
   }
- 
 ]
