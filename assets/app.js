@@ -12,7 +12,11 @@ async function DisplayProducts() {
 
         const productList = document.getElementById('product-list');
 
-        productList.innerHTML = 'Product List';
+        productList.innerHTML = '';  
+
+        const productListHeading = document.createElement('h1');
+        productListHeading.textContent = 'SHOP ITEMS LIST';
+        productList.appendChild(productListHeading);
 
         data.forEach(product => {
             const productCard = document.createElement('div');
@@ -21,22 +25,19 @@ async function DisplayProducts() {
             const productName = document.createElement('h3');
             productName.textContent = product.name;
 
-            // Fix variable name for productDescription
-            const productDescription = document.createElement('h3');
+            const productDescription = document.createElement('p');
             productDescription.textContent = product.description;
 
             const productPrice = document.createElement('p');
             productPrice.textContent = `Price: $${product.price}`;
 
-            // Fix variable name for productDate
-            const productDate = document.createElement('h3');
-            productDate.textContent = product.date_added;
+            
+            const productDate = document.createElement('p');
+            productDate.textContent = `Date Added: ${product['date added']}`;  
 
             productCard.appendChild(productName);
-            // Add productDescription to productCard
             productCard.appendChild(productDescription);
             productCard.appendChild(productPrice);
-            // Add productDate to productCard
             productCard.appendChild(productDate);
 
             productList.appendChild(productCard);
