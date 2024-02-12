@@ -12,15 +12,29 @@ async function DisplayProducts() {
 
         const productList = document.getElementById('product-list');
 
-        productList.innerHTML = '';  
+        productList.innerHTML = '';
 
         const productListHeading = document.createElement('h1');
         productListHeading.textContent = 'SHOP ITEMS LIST';
         productList.appendChild(productListHeading);
 
+        // Create a container for the product cards
+        const productContainer = document.createElement('div');
+        productContainer.style.display = 'flex'; // Apply flex display
+        productContainer.style.flexWrap = 'wrap'; // Allow wrapping of items
+
         data.forEach(product => {
+            // Create a product card
             const productCard = document.createElement('div');
             productCard.classList.add('product-card');
+            // Apply inline CSS for styling
+            productCard.style.border = '2px solid #ccc';
+            productCard.style.borderRadius = '8px';
+            productCard.style.padding = '10px';
+            productCard.style.width = 'calc(33.33% - 20px)';
+            productCard.style.boxSizing = 'border-box';
+            productCard.style.marginRight = '20px'; // Add some right margin between cards
+            productCard.style.marginBottom = '20px'; // Add some bottom margin between cards
 
             const productName = document.createElement('h3');
             productName.textContent = product.name;
@@ -32,40 +46,39 @@ async function DisplayProducts() {
             productPrice.textContent = `Price: $${product.price}`;
 
             const productDate = document.createElement('p');
-            productDate.textContent = `Date Added: ${product['date added']}`;  
+            productDate.textContent = `Date Added: ${product['date added']}`;
 
             productCard.appendChild(productName);
             productCard.appendChild(productDescription);
             productCard.appendChild(productPrice);
             productCard.appendChild(productDate);
 
-            productList.appendChild(productCard);
+            // Create a button for each product
+            const addButton = document.createElement('button');
+            addButton.textContent = 'Add to Cart';
+            addButton.classList.add('add-to-cart-button');
 
-            // Create a Bootstrap button
-            const buttonContainer = document.createElement('div'); // Container for button and indicator
-            buttonContainer.classList.add('button-container');
-            
-            const button = document.createElement('button');
-            button.classList.add('btn', 'btn-primary'); 
-            button.textContent = 'Add to Cart';
-
+            // Create an indicator for the button click count
             const clickCountIndicator = document.createElement('span');
-            clickCountIndicator.classList.add('click-count');
             clickCountIndicator.textContent = '0'; // Initial click count
+            clickCountIndicator.classList.add('click-count');
 
-            buttonContainer.appendChild(button);
-            buttonContainer.appendChild(clickCountIndicator);
-            productList.appendChild(buttonContainer);
-
-            // Add click event listener to the button
+            // Click event handler for the button
             let clickCount = 0;
-            button.addEventListener('click', () => {
+            addButton.addEventListener('click', () => {
                 clickCount++;
                 clickCountIndicator.textContent = clickCount;
                 console.log(`Product "${product.name}" added to cart. Click count: ${clickCount}`);
-                // You can perform additional actions here, like updating a cart counter or sending data to a server.
             });
+
+            // Append the button and click count indicator to the product card
+            productCard.appendChild(addButton);
+            productCard.appendChild(clickCountIndicator);
+
+            productContainer.appendChild(productCard);
         });
+
+        productList.appendChild(productContainer);
 
     } catch (error) {
         console.error('Error fetching data:', error);
