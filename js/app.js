@@ -5,7 +5,7 @@ async function DisplayProducts() {
      
         const response = await fetch(apiUrl);
 
-        // Check if the response is successful
+        
         if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -37,6 +37,7 @@ async function DisplayProducts() {
             const productCard = document.createElement('div');
          
             productCard.classList.add('product-card');
+
             //  this is the inline css to have better design
             productCard.style.border = '2px solid #ccc';
             productCard.style.borderRadius = '8px';
@@ -45,6 +46,14 @@ async function DisplayProducts() {
             productCard.style.boxSizing = 'border-box';
             productCard.style.marginRight = '20px';  
             productCard.style.marginBottom = '20px';  
+
+              //  This creates an element for the images
+    const productImage = document.createElement('img');
+    productImage.src = product.imageUrl;  
+    productImage.alt = product.name;  
+    
+    // Append the image to the product card
+    productCard.appendChild(productImage);
 
             // Create elements for displaying product information
             const productName = document.createElement('h3');
@@ -65,17 +74,17 @@ async function DisplayProducts() {
             productCard.appendChild(productPrice);
             productCard.appendChild(productDate);
 
-            // Create a button for adding the product to the cart
+            //  this is the button
             const addButton = document.createElement('button');
             addButton.textContent = 'Add to Cart';
             addButton.classList.add('add-to-cart-button');
 
-            // Create an element for displaying the click count of the button
+            //  this shows the click count beside the button
             const clickCountIndicator = document.createElement('span');
-            clickCountIndicator.textContent = '0'; // Initial click count
+            clickCountIndicator.textContent = '0';  
             clickCountIndicator.classList.add('click-count');
 
-            // Click event handler for the add to cart button
+            // Click event handler for the button
             let clickCount = 0;
             addButton.addEventListener('click', () => {
                 clickCount++;
@@ -83,15 +92,11 @@ async function DisplayProducts() {
                 console.log(`Product "${product.name}" added to cart. Click count: ${clickCount}`);
             });
 
-     
             productCard.appendChild(addButton);
             productCard.appendChild(clickCountIndicator);
-
-         
+     
             productContainer.appendChild(productCard);
         });
-
-     
         productList.appendChild(productContainer);
  
     } catch (error) {
