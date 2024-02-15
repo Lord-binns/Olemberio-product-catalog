@@ -4,21 +4,21 @@
     "description": "A weapon of incredible power that is difficult for even the strongest of warriors to control.",
     "price": 5100,
     "date added": "Feb 05, 2024",
-    "imageUrl": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fexternal-preview.redd.it%2FLdnswl9CQQGy9KZFOxhEJv6fp1Twi9WxmMLs2lbSpQI.jpg%3Fauto%3Dwebp%26s%3Dddb8c3cad52047021b8d7e9f2b59adcc416958a1&tbnid=gysUPjPVr_YKNM&vet=12ahUKEwjesrnM-KWEAxUqka8BHR07DfQQMygCegQIARBT..i&imgrefurl=https%3A%2F%2Fwww.reddit.com%2Fr%2FDotA2%2Fcomments%2F1lv6zi%2Fsteam_workshop_daedalus_for_drow_ranger%2F&docid=TPNct6EF1UFlAM&w=512&h=512&q=daedalus%20image%20dota%202&hl=en&ved=2ahUKEwjesrnM-KWEAxUqka8BHR07DfQQMygCegQIARBT"
+    "imageUrl": "https://www.dotabuff.com/assets/items/daedalus-828ea7472c4b25a41d53d1935f99b9da5d6ccf214eec4769952cc0b891c66316.jpg"
   },
   {
     "name": "Black king bar",
     "description": "Applies a Basic Dispel. Grants 50% Magic resistance and immunity to pure and reflected damage.",
     "price": 4050,
     "date added": "Feb 05, 2024",
-    "imageUrl": "path/to/black_king_bar_image.jpg"
+    "imageUrl": "https://www.dotabuff.com/assets/items/black-king-bar-8cd19b9e780334dfb49999208c4d5a4550c5e337ab2f55aa14e7c38cd2cd56f9.jpg"
   },
   {
     "name": "Echo saber",
     "description": "A deceptively swift blade imbued with resonant magic.",
     "price": 2700,
     "date added": "Feb 05, 2024",
-    "imageUrl": "path/to/echo_saber_image.jpg"
+    "imageUrl": "https://www.dotabuff.com/assets/items/echo-sabre-3c6912647dd2037677047936a3bdaa2fc87b7a85a31f3bb4cd9502269c8e4629.jpg"
   },
 
   {
@@ -26,7 +26,7 @@
     "description": "So powerful, it cannot have a single owner. Divine Rapier drops when its wielder dies, unless they have available Reincarnation sources.",
     "price": 5600,
     "date added": "Feb 12, 2024",
-    "imageUrl": "path/to/echo_saber_image.jpg"
+    "imageUrl": "https://www.dotabuff.com/assets/items/divine-rapier-2e5ba838c5a8ee96648a83498e319f6e973aa288e0687d64f9411907fe9772a1.jpg"
   },
 
   {
@@ -34,7 +34,7 @@
     "description": "Emits a freezing wave that causes enemies to take 15% more damage from spells for 16 seconds, deals 200 magical damage and slows their movement by -40% for 4 seconds. Deals 150% damage to illusions.",
     "price": 4825,
     "date added": "Feb 15, 2024",
-    "imageUrl": "path/to/echo_saber_image.jpg"
+    "imageUrl": "https://www.dotabuff.com/assets/items/shivas-guard-03bf68f6c8b10c0e21021f63ea50e88e4abb252a2d9af21eba02b4b2838ee8ec.jpg"
   },
 
   {
@@ -42,6 +42,6 @@
     "description": "Upgrades an existing ability or adds a new ability to your hero. With origins known only to a single wizard, fragments of this impossible crystal are nearly as coveted as the renowned scepter itself.",
     "price": 1400,
     "date added": "Feb 15, 2024",
-    "imageUrl": "path/to/echo_saber_image.jpg"
+    "imageUrl": "https://www.dotabuff.com/assets/items/aghanims-shard-4e79e040a49fe45c7aa7aeb2b0776c06488564bc5cd33e742960153363910526.jpg"
   }
 ]
