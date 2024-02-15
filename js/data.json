@@ -27,5 +27,21 @@
     "price": 5600,
     "date added": "Feb 12, 2024",
     "imageUrl": "path/to/echo_saber_image.jpg"
+  },
+
+  {
+    "name": "Shiva's Guard",
+    "description": "Emits a freezing wave that causes enemies to take 15% more damage from spells for 16 seconds, deals 200 magical damage and slows their movement by -40% for 4 seconds. Deals 150% damage to illusions.",
+    "price": 4825,
+    "date added": "Feb 15, 2024",
+    "imageUrl": "path/to/echo_saber_image.jpg"
+  },
+
+  {
+    "name": "Aghanim's Shard",
+    "description": "Upgrades an existing ability or adds a new ability to your hero. With origins known only to a single wizard, fragments of this impossible crystal are nearly as coveted as the renowned scepter itself.",
+    "price": 1400,
+    "date added": "Feb 15, 2024",
+    "imageUrl": "path/to/echo_saber_image.jpg"
   }
 ]
